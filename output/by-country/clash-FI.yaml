@@ -5,52 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 31.76.21.179
-  port: 443
+  server: 65.109.215.118
+  port: 1080
   udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 204.168.195.30
-  port: 51185
+  server: 185.79.138.71
+  port: 448
   udp: true
   type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  flow: xtls-rprx-vision
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   tls: true
   reality-opts:
-    public-key: VFDbAJQdqzKl7hL6SmUrhHHEORtILSsJHYWF67an1HU
-    short-id: 55a464180d3b1f7e
-  servername: amp-api-edge.apps.apple.com
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: fr.vpn.legendaah.xyz
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: fin.pinkmoon.pro
-  port: 443
+  server: 188.132.237.20
+  port: 2095
   udp: true
   type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
-  client-fingerprint: qq
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +37,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,6 +45,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

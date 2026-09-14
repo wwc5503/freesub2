@@ -9,12 +9,12 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
   tls: true
   reality-opts:
     public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
   servername: dl.dell.com
-  client-fingerprint: safari
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: TunService

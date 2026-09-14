@@ -28,65 +28,44 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 31.58.181.88
+  server: 89.47.55.8
   port: 8443
   udp: true
   type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
-  flow: xtls-rprx-vision
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
   tls: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
+    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
+  servername: www.canon.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 45.130.125.201
-  port: 80
+  server: 85.204.107.183
+  port: 8080
   udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 80.240.18.227
-  port: 10051
+  server: 129.151.64.169
+  port: 31867
   udp: true
   type: vless
-  uuid: 73996ef7-544c-45e7-abc0-973218c727e2
+  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
   tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 85.204.107.178
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: upload.tbotapi.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -107,8 +86,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,7 +97,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 rules:
 - MATCH,PROXIES
