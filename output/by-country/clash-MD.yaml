@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
   server: 131.123.25.4
   port: 443
   udp: true
   type: vless
-  uuid: 4360f941-b541-01ac-8507-2de3763e0cfd
+  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 rules:
 - MATCH,PROXIES
