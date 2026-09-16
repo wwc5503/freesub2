@@ -5,33 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "108.165.233.223",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.21.117.9",
       "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
       "tls": {
         "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "server_name": "netlivpn2950.bbxff.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -42,7 +22,7 @@
         "type": "ws",
         "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
         "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+          "Host": "netlivpn2950.bbxff.workers.dev"
         }
       }
     },
@@ -51,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
