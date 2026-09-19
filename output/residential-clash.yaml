@@ -4,20 +4,67 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: hg.zhujue.us
-  port: 11000
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  server: 199.232.78.101
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  server: 108.162.198.178
+  port: 2095
   udp: true
   type: vless
-  uuid: 0e46345c-f33b-4f9b-b8ec-90e7c986af7e
-  flow: xtls-rprx-vision
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  server: 104.238.148.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
-  servername: s0.awsstatic.com
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /about?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  server: 146.56.115.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 7bzzv.umtm.n70.hh.vavava.kdns.fr
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 7dba81fc3a0b.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 7bzzv.umtm.n70.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  server: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -25,7 +72,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: 7dba81fc3a0b.oylfmxz.cn
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -35,14 +82,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
