@@ -5,16 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 185.87.24.173
-  port: 2085
+  server: max.karmatel.ir
+  port: 55519
   udp: true
   type: vless
-  uuid: 3f654175-4f83-47ec-8ce2-f2bf0d160b27
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: d10191ad-1671-496e-b0cb-be5a28d0739a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play-apps-features.googleusercontent.com
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 172.67.134.170
+  server: 172.67.151.109
   port: 443
   udp: true
   type: vless
