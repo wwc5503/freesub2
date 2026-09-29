@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "45.164.20.85",
-      "server_port": 10226,
-      "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
+      "type": "shadowsocks",
+      "tag": "🇴🇲 OM 01 - xiaohe",
+      "server": "130.94.81.180",
+      "server_port": 18415,
+      "method": "aes-128-gcm",
+      "password": "b667234b8d2e7eb34444857ea3a9b18a"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇴🇲 OM 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇴🇲 OM 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
