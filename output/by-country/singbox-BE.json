@@ -5,21 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "85.155.228.185",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "172.67.134.136",
       "server_port": 443,
-      "uuid": "ca5ffe64-81e0-42f0-a136-03cc4f662a4f",
+      "uuid": "fa45096d-bed0-ad80-c773-23c300000003",
       "tls": {
         "enabled": true,
-        "server_name": "avsal.krusofiya.fun",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9M294WArTUZ9m1fMmvlHauSb5wZo68SkCW_lEgBVAF8",
-          "short_id": "4d5faa03b738bd3b"
+        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
