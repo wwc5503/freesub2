@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 84.235.244.108
-  port: 22573
+- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
+  server: 185.126.238.87
+  port: 2083
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+  network: grpc
+  grpc-opts:
+    grpc-service-name: security.debian.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇬🇷 希腊 (Greece) 01 - xiaohe
 rules:
 - MATCH,PROXIES

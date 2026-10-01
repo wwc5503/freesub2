@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "platform128.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
+      "server": "185.126.238.87",
+      "server_port": 2083,
+      "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
       "transport": {
-        "type": "ws",
-        "path": "/platform128",
-        "headers": {
-          "Host": "platform128.halalkhor.info"
-        }
+        "type": "grpc",
+        "service_name": "security.debian.org"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
