@@ -14,17 +14,9 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
       "server": "91.201.65.122",
-      "server_port": 9097,
+      "server_port": 9074,
       "method": "aes-256-cfb",
-      "password": "Sn5B7jTqr76aCJT8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
-      "server": "91.201.65.122",
-      "server_port": 9039,
-      "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "p5wSkb2uM3pKSS3j"
     },
     {
       "type": "selector",
@@ -32,8 +24,7 @@
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
-        "🇮🇹 意大利 (Italy) 02 - xiaohe",
-        "🇮🇹 意大利 (Italy) 03 - xiaohe"
+        "🇮🇹 意大利 (Italy) 02 - xiaohe"
       ]
     },
     {
@@ -41,8 +32,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
-        "🇮🇹 意大利 (Italy) 02 - xiaohe",
-        "🇮🇹 意大利 (Italy) 03 - xiaohe"
+        "🇮🇹 意大利 (Italy) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
