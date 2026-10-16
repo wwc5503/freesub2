@@ -5,42 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  server: 206.1.102.64
-  port: 8080
-  udp: true
-  type: vmess
-  uuid: 184a0393-5c9e-403c-9be6-427b066308e1
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: fujrdt.d6f54hd1j.cc
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vmess
-  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: fujrdt.d6f54hd1j.cc
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
-      Host: fujrdt.d6f54hd1j.cc
+      Host: wzs.echo.net.eu.org
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,8 +58,9 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,7 +68,8 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
