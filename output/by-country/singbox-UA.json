@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "my2.frnhk.xyz",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "netx.smrtai.top",
       "server_port": 443,
-      "uuid": "6006c9a2-c0a2-4cda-80f2-405b0d790fc8",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
       "tls": {
         "enabled": true,
-        "server_name": "www.waseda.jp",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig",
-          "short_id": "6b7a8c9d"
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
