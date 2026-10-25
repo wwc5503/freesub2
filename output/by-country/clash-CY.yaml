@@ -11,20 +11,18 @@ proxies:
   type: vless
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 5.253.28.224
-  port: 40443
+  server: 5.253.29.254
+  port: 14430
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: firefox
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: 5.253.28.240
+  server: hydra.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -35,7 +33,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   server: hydra.yokkastars.com
   port: 2443
