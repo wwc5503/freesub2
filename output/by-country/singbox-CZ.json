@@ -5,43 +5,39 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "198.16.113.219",
-      "server_port": 8443,
-      "uuid": "e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "178.208.89.21",
+      "server_port": 443,
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
-          "short_id": "69984b9e02545831"
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 02 - xiaohe",
-      "server": "198.16.113.221",
-      "server_port": 8443,
-      "uuid": "98a24806-141a-43d3-b094-bd66c4eb93b8",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
-          "short_id": "69984b9e02545831"
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "73a9e631a09b"
         }
       }
     },
@@ -50,16 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

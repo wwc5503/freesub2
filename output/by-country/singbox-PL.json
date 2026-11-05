@@ -4,23 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -28,6 +13,26 @@
         "enabled": true,
         "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "84.23.52.120",
+      "server_port": 28450,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.sparxiecn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive"
       }
     },
     {
