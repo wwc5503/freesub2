@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 216.106.191.201
-  port: 10303
+  server: 94.183.234.245
+  port: 443
   udp: true
   type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
-    short-id: 6aa50b0cc8d23464
-  servername: www.apple.com
-  client-fingerprint: ''
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

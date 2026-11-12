@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "216.106.191.201",
-      "server_port": 10303,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "server": "94.183.234.245",
+      "server_port": 443,
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ",
-          "short_id": "6aa50b0cc8d23464"
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },
