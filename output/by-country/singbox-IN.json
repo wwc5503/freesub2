@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,6 +26,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -34,7 +48,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -45,24 +59,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "85.234.100.32",
+      "server": "13.140.253.35",
       "server_port": 443,
-      "uuid": "c1208c5a-2350-0003-affd-fc41b4319286",
+      "uuid": "f1d3c8af71c4ef75625fcf446aa2c15b",
       "tls": {
         "enabled": true,
-        "server_name": "decdn-28.nome-rkp.net",
+        "server_name": "xray-h0urp9tx-rapid-summit-2.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -71,9 +74,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/media/ws/",
+        "path": "/050334203cc522a3",
         "headers": {
-          "Host": "decdn-28.nome-rkp.net"
+          "Host": "xray-h0urp9tx-rapid-summit-2.cloady.io"
         }
       }
     },
