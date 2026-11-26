@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 92.63.189.39
-  port: 8443
+  server: devcdn.icu
+  port: 443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
-  flow: xtls-rprx-vision
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   tls: true
-  servername: avelon.onl
+  servername: devcdn.icu
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /edge/chunk/b2265efffa29/
+    headers:
+      Host: devcdn.icu
 proxy-groups:
 - name: PROXIES
   type: select
