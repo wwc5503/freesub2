@@ -6,26 +6,17 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "devcdn.icu",
+      "server": "45.194.66.177",
       "server_port": 443,
-      "uuid": "b432a23a-acff-425c-bf69-70480cd6ed09",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "devcdn.icu",
+        "server_name": "31tawwo0.virtual-network.lol",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/edge/chunk/b2265efffa29/",
-        "headers": {
-          "Host": "devcdn.icu"
+          "fingerprint": "firefox"
         }
       }
     },
